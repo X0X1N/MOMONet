@@ -1,0 +1,18 @@
+# Java / Eclipse build outputs
+build/
+*.class
+*.log
+
+# IDE / OS files
+.metadata/
+.DS_Store
+Thumbs.db
+
+# Local secrets / config
+.env
+*.local
+secrets.*
+
+# Uploaded runtime files
+uploads/
+*.tmp

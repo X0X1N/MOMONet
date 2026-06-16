@@ -1,0 +1,103 @@
+:root {
+  	--bg: #121212;
+  	--text: #fff;
+  	--nav: #1f1f1f;
+  	--hover: #333;
+  	--input: #2a2a2a;
+}
+
+:root.light {
+  	--bg: #f4f4f4;
+  	--text: #000;
+  	--nav: #fff;
+  	--hover: #e0e0e0;
+  	--input: #ddd;
+}
+
+body {
+  	margin: 0;
+  	background: var(--bg);
+  	color: var(--text);
+  	font-family: "Poor Story", system-ui;
+  	transition: 0.3s;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px);
+}
+
+.topbar {
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  	background: var(--nav);
+  	padding: 10px 20px;
+  	position: sticky;
+  	top: 0;
+  	z-index: 100;
+  
+}
+
+.topbar a {
+  	color: var(--text);
+  	text-decoration: none;
+  	margin-right: 15px;
+}
+
+.topbar a:hover {
+	background: var(--hover);
+}
+
+.search-box input {
+ 	margin-top: 15px;
+  	background: var(--input);
+  	color: var(--text);;
+  	border: none;
+  	padding: 6px 10px;
+  	border-radius: 4px;
+  	font-size: 14px;
+  	height:30px;
+  	vertical-align: middle;
+}
+
+.theme-toggle-container {
+  	position: relative;
+  	width: 60px;
+  	height: 28px;
+  	border: 2px solid var(--text);
+  	border-radius: 30px;
+  	display: inline-block;
+  	box-sizing: border-box;
+  	margin-left: 10px;
+  	transition: border-color 0.3s;
+}
+
+.theme-toggle {
+  	position: absolute;
+  	top: 0px;
+  	left: 2px;
+  	width: 24px;
+  	height: 24px;
+  	background-color: var(--nav);
+  	border: none;
+  	border-radius: 50%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	cursor: pointer;
+  	transition: all 0.3s ease;
+}
+
+.theme-toggle img {
+  	width: 18px;
+  	height: 18px;
+  	pointer-events: none;
+}
+
+a { 
+	text-decoration: none; 
+}
+
